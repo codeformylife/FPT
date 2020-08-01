@@ -1,6 +1,7 @@
 "*/*" this syntax used in XSL will search all the elements that are the grandchildren of the root. | False
 "/" in the beginning of the XSL declaration indicates that: | this node applies to the root level node of XML document
 "Position" function do returns the number equal to context position | True
+#PCDATA refers to | Parsed character data
 $x is an | Variable
 &lt;, &gt;, &amp;, &apos;, &quot; | these are the five predefined entity references
 'NMTOKENS' | The value is a list of valid XML names.
@@ -15,16 +16,7 @@ $x is an | Variable
 * by itself applied to ch09_01.xml just picks out the <states> element. * selects all element children (not grandchildren or any descendents) | of the context node, and when you open ch09_01.xml, the root node is the context node.
 ++test[ 7 ]; | 4
 - JSP engine loads the JSP page from disk and converts it into a servlet content. | - JSP engine compiles the servlet
-10 Which of the following is an illegal array initialization statement? | var n = new Array( 5 );
-11 The ONFOCUS event fires when ________. | (c)  an element is clicked.
-12. The xsl:attribute do generates the elements in the time of processing. | True
-17. XML Schema is designed to | be self-descriptive
-19. How many parameters are there for replaceData() method ? | 3 (start, length,string)
-2 c = new Array( 12 ); | declares, allocates
-2. Which Statement about xml is true? | All of the above.
-9. Which is not a correct name for an XML documents? | All 3 names are incorrect.
 <!-- WELCOME.xml -->    <?xml version = "1.0"?>    <!DOCTYPE WELCOME SYSTEM "hello.dtd">    The following code indicates that the DTD is: | An external DTD
-<!-- WELCOME.xml --> <?xml version = "1.0"?> <!DOCTYPE WELCOME SYSTEM "hello.dtd"> The following code indicates that the DTD is: | An external DTD
 <!DOCTYPE Book SYSTEM “book.dtd”> | Book.dtd is an external DTD
 <!DOCTYPE root-element [element-declarations]> | data
 <!ELEMENT A((B,C) | Identify what the statement indicates
@@ -83,8 +75,6 @@ A ____________ session bean is a bean that holds conversations that span a singl
 A ___________________________ in EJB is an object that is deploy on any EJB Server | Component
 A bean present in the page and identified as 'mybean' has a property named 'name'. Which of the following is a correct way to print the value of this property? | <jsp:getProperty name="mybean" property="name"/>
 A bean with a property color is loaded using the following statement <jsp:useBean id="fruit" class="Fruit"/> Which statement may be used to set the color property of the bean | <jsp:setProperty name="fruit" property="color" value="white"/>
-A bean with a property color is loaded using the following statement <jsp:useBean id="fruit" class="Fruit"/>Which of the following statements may be used to print the value of color property of the bean?. Select the one correct answer. | <jsp:getProperty name="fruit" property="color"/>
-A bean with a property color is loaded using the following statement <jsp:usebean id="fruit" class="Fruit"/> What happens when the following statement is executed. Select the one correct answer. <jsp:setProperty name="fruit" property="*"/> | All the properties of the fruit bean are assigned the values of input parameters of the JSP page that have the same name
 A bean with a property color is loaded using the following statement | <jsp:setProperty name="fruit" property="color" value="white"/>
 A built-in simple element can contain a default value or a facet value | False
 A child element can be a parent element. | True
@@ -144,7 +134,6 @@ An MNC receives at its headquarter from its subsidiaries, XML documents containi
 An XML Schema defines how many child elements can appear in an XML document? | True
 An XML Schema defines the structure of an XML document | True
 An XML Schema defines whether an element is empty or can include text. | True
-An XML Schema describes the structure of an XML _______ . | document
 An XML Schema is an XML-based add-on to DTDs | False
 An XML based application maintains a very large configuration file in XML format. | SAX
 An XML based web application to process audio files which are binary in nature needs to be written. | UDDI
@@ -174,7 +163,6 @@ An image tag is an example of an EMPTY element. | True
 An object with page scope exists in every JSP of a particular Web application. | False
 An object's methods and attributes are accessed by writing the name of the object followed by the ________. | dot operator
 An xsl:numbers do inserts a formated numbers into the ______ . | output
-An xsl:numbers do inserts a formatted numbers into the ____ | output
 Annotation for *..1 | @ManyToOne
 Annotation for .. | @ManyToMany
 Annotation for 1..* | @OneToMany
@@ -213,7 +201,6 @@ CSS positions can be either absolute or ________. | relative
 CSS understands _____ number of colours defined by their names: | 16
 CSS uses complex elements to format the documents | False
 Call-by- ________ is the method of passing a copy of the argument's value to a function. | value
-Call-by- ________ is the method of passing the argument's actual location in memory to a function. | reference
 Can a simple type (from XML Schema ) have children | no
 Can we use the annotation @PrePassivate for more than one method in a Entity bean? | No
 Can you define list of lists in XML Schema ? | n
@@ -227,24 +214,20 @@ Cascading Style Sheets lack support to define spacing between data, | False
 Cascading Style Sheets | CSS (acronym)
 Character data is treated as regular text | False
 Characters like ">" and "&" can be used in CDATA sections. | True
-Characters like ">" and "&" can be used in PCDATA sections? | false
 Child elements declared in a sequence need not appear in the document in the same sequence. | False
 Choose the correct syntax of x:parse in XML tag of JSTL | <x:parse var="x" scope="session" xml = "${xml}"/>
 Client reduces the server load by sending large amount of information in one XML document to the server. | True
 Comment in XML document is given by | <!-- -->
 Comments appear only in the document prolog. | False
 Consider and xml document <?xml version="1.0"?> <?xml-stylesheet type="text/css" href=xsampdoc.css ?> <xsampdoc>	<greeting>All The Best!</greeting> </xsampdoc>  The code for the style sheet xsampdoc is given as:  greeting { 	display:block; 	font-family:Arial,Helvetica, sans-serif;font-size:32pt; 	width:30em; 	color:red; }							 What will be the output of the above code? | The xml document will be displayed in the tree format
-Consider and xml document <?xml version="1.0"?> <?xml-stylesheet type="text/css" href=xsampdoc.css ?> <xsampdoc>  <greeting>All The Best!</greeting> </xsampdoc>  The code for the style sheet xsampdoc is given as:  greeting {  display:block;  font-family:Arial,Helvetica, sans-serif;font-size:32pt;   width:30em;   color:red; }               What will be the output of the above code? | The xml document will be displayed in the tree format
 Consider the Formal Public Identifier -//W3C//DTD 1.8//IND | The Formal Public Identifier is not valid because the fourth field is not valid
 Consider the contents of 2 jsp files:<!-- In File : test.jsp --><html><body><% String s = "Hello"; %>//1 insert LOC here.<%=s%></body></html><!-- In File : test2.jsp --><% s = s+" world"; %>What can be inserted at //1 so that it prints "Hello world" when test.jsp is requested? | <jsp:include page="test2.jsp"/>
 Consider the following HTML code.  <HTML>  <SCRIPT LANGUAGE = "JavaScript">  <!--  document.writeln("Hello World");  // -->  </SCRIPT>  </HTML>    What would a browser capable of scripting display when executing this code? | Hello World
-Consider the following HTML code. <HTML> <SCRIPT LANGUAGE = "JavaScript"> <!-- document.writeln("Hello World"); // --> </SCRIPT> </HTML>What would a browser capable of scripting display when executing this code? | Hello World
 Consider the following HTML code. Which method of MyFirstServlet will be invoked when you click on the url shown by the page? | doGet
+Consider the following HTML code. | Hello World
 Consider the following HTML document. 1 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">  2 <HTML> 3 <HEAD>  4 <TITLE>Object Model</TITLE> 5  6 <SCRIPT LANGUAGE = "JavaScript">  7 function start() 8 {  9 alert( pText.innerText );  10 pText.innerText = "Thanks for coming.";  11 }  12 </SCRIPT>  13 14 </HEAD> 15  16 <BODY ONLOAD = start()> 17 18 <P ID = "pText">Welcome to our Web page!</P>  19  20 </BODY>  21 </HTML>  Which of the following selections a true statement? | The pText object does not have an innerText attribute
-Consider the following HTML document. 1 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN"> 2 <HTML> 3 <HEAD> 4 <TITLE>Object Model</TITLE> 5 6 <SCRIPT LANGUAGE = "JavaScript"> 7 function start() 8 {9 alert( pText.innerText );10 pText.innerText = "Thanks for coming.";11 } 12 </SCRIPT>13 14 </HEAD> 15 16 <BODY ONLOAD = start()> 17 18 <P ID = "pText">Welcome to our Web page!</P> 19 20 </BODY> 21 </HTML> Which of the following selections a true statement? | The pText object does not have an innerText attribute.
 Consider the following HTML document. 1 <HTML> 2 <HEAD> 3 <TITLE>Children Collection</TITLE> 4 <SCRIPT LANGUAGE = "JavaScript"> 5 </SCRIPT> 6 </HEAD> 7 <BODY> 8 <P></P> 9 </BODY> 10 </HTML> Select the true statement. | The SCRIPT element is a direct child of the HEAD element.
 Consider the following HTML document. <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN"> <HTML> <HEAD> <TITLE>Object Model</TITLE> <SCRIPT LANGUAGE = "JavaScript"> function start() { alert( pText.innerText ); pText.innerText = "Thanks for coming."; } </SCRIPT> </HEAD> <BODY ONLOAD = start()> <P ID = "pText">Welcome to our Web page!</P> </BODY> </HTML> Which of the following selections a true statement? | The pText object does not have an innerText attribute.
-Consider the following HTML document. <HTML> <HEAD> <TITLE>Children Collection</TITLE> <SCRIPT LANGUAGE = "JavaScript"> </SCRIPT> </HEAD> <BODY> <P></P> </BODY> </HTML> Select the true statement. | The SCRIPT element is a direct child of the HEAD element.
 Consider the following HTML document. <HTML> <HEAD> <TITLE>Frames collection</TITLE> </HEAD> <FRAMESET ROWS = "100, *"> <FRAME SRC = "top.html" NAME = "first"> <FRAME SRC = "" NAME = "second"> </FRAMESET> </HTML> Which of the following is the proper way to access the frame "second" from the script of an outside document? | parent.frames( " second" )
 Consider the following XML document and the attached stylesheet. What is the result of applying | FALSE
 Consider the following XML document: <?xml version="1.0"?> <ORDERDETAILS> <PRODUCT ID="P001" NAME="Mini Bus" PRICE="75"><ORDER ID="O001"> <SHIP_ADD>10 NEWSLAND ESTATE, NY</SHIP_ADD> <QUANTITY>30</QUANTITY> </ORDER> <ORDER ID="O002"> <SHIP_ADD>11 NEWSLAND ESTATE, NY</SHIP_ADD> <QUANTITY>50</QUANTITY></ORDER> </PRODUCT> </ORDERDETAILS> Which of the following code snippets will you use to display the product of price and quantity | Choose D
@@ -254,22 +237,18 @@ Consider the following code selections. Assume count is initialized to 7 and num
 Consider the following declaration: !ATTLIST student age CDATA ???? Which one of the following can be used to replace ???? in the above definition? | #IMPLIED
 Consider the following java code://in file Book.java package com.bookstore;public class Book{private long isbn; public Book(){ isbn = 0; }public long getIsbn(){ return isbn; }public void setIsbn(long value){ this.isbn = value; }}Code for browse.jsp:<jsp:useBean class="com.bookstore.Book" id="newbook" />LINE 1 : <jsp:setProperty name="newbook" property="isbn" value="1000"/> Which of the following statements are correct? | The isbn property of newbook will be set to 1000.
 Consider the following script. What is wrong with the following code?  1	<SCRIPT LANGUAGE = "JavaScript">  2	var firstNumber, 3	secondNumber;  4	thirdNumber;  5  6	thirdNumber =  7	parseInt( window.prompt( "Enter an integer", 0 ) );  8	document.write( thirdNumber );  9	</SCRIPT> | The word var must be placed before thirdNumber in line 4
-Consider the following script. What is wrong with the following code?  1  <SCRIPT LANGUAGE = "JavaScript">  2 var firstNumber, 3  secondNumber;  4  thirdNumber;  5  6  thirdNumber =  7  parseInt( window.prompt( "Enter an integer", 0 ) );  8  document.write( thirdNumber );  9 </SCRIPT> | The word var must be placed before thirdNumber in line 4
-Consider the following script. What is wrong with the following code? 1 <SCRIPT LANGUAGE = "JavaScript"> 2 var firstNumber, 3 secondNumber; 4 thirdNumber; 5 6 thirdNumber = 7 parseInt( window.prompt( "Enter an integer", 0 ) ); 8 document.write( thirdNumber ); 9 </SCRIPT> | The word var must be placed before thirdNumber in line 4.
+Consider the following script. What is wrong with the following code? | The word var must be placed before thirdNumber in line 4.
 Consider the following script. What is wrong with the following code?<SCRIPT LANGUAGE = "JavaScript">var firstNumber,secondNumber;thirdNumber;thirdNumber =parseInt( window.prompt( "Enter an integer", 0 ) );document.write( thirdNumber );</SCRIPT> | The word var must be placed before thirdNumber in line 4.
 Consider the following statements:   Statement A: XML enables you to store data in a structured format by allowing you to create customized tags.   Statement B: XML documents can be easily interpreted by target systems. Which of the following is correct about the above statements? | Both, Statement A and Statement B, are True.
-Consider the following statements:   Statement A: XML is a text-based markup language that enables you to store data in a structured format by using meaningful tags.   Statement B: XML allows you to format data as per the requirements of the application.Which of the following is correct about the above statements? | Both, Statement A and Statement B, are True.
 Consider the following statements:   Statement A: XML stand for eXtensible Markup Language.   Statement B: CSS stand for Creative Style Sheets.Which of the following is correct about the above statements? | Statement A is True, and statement B is False.
 Consider the following statements:   Statement A: You can use the <!ATTLIST> statement in a DTD to declare an attribute for an element.   Statement B: A single <!ATTLIST> statement can be used to declare multiple attributes for an element.Which of the following is correct about the above statements? | Statement A is True, and Statement B is False.
 Consider the following statements:  Statement A: A namespace is a method of preventing conflicts between elements having the same names. Statement B: A namespace URI is the same as a Web URI. Which of the following is correct about the above statements? | Both, Statement A and Statement B, are True.
 Consider the following statements:  Statement A: Java Architecture for XML Binding (JAXB) provides a fast and convenient way to bind between XML schemas and Java representations, making it easy for Java developers to incorporate XML data and processing functions in Java applications.  Statement B: JAXB provides methods for unmarshalling (writing) XML instance documents into Java content trees, and then marshalling (reading) Java content trees back into XML instance documents. | Statement A is True, and Statement B is False.
 Consider the following statements:  Statement A: The xjc schema compiler, also called the binding compiler, is an important part of a JAXB implementation. The compiler binds a source XML schema to a set of schema-derived program elements. The binding is described by an XML-based binding language in a binding file. The binding compiler produces a set of packages containing Java source files and JAXB property files.  Statement B: In most cases, the default bindings generated by the binding compiler are sufficient. However, there are cases where you might want to modify the default bindings (for example, you might want to provide more meaningful package names than are generated by default), you can use the following syntax: xjc schema_file.xsd ““g package_name | Statement A is True, and Statement B is False.
 Consider the following statements:  Statement A: You can point at a single document by using a hyperlink in HTML.  Statement B: HTML links are multidirectional.  which of the following is correct about the above statements? | Statement A is True, and Statement B is False.
-Consider the following statements: Statement A: XSLT is a superset of the CSS functionality. Statement B: XSLT is an application of XML.Which of the following is correct about the above statements? | Statement A is False, and statement B is True.
 Consider the xml fragment 15. <aaa></aaa> 16. <bbb></bbb> Choose the correct answer when the SAX is used | At least callback method in content handler will be triggered after line 15 and before line 16
 Consider: 1. XSL processor starts the root node and performs pattern matching in the style sheet 2. The style rules of the template are applied to the content to generate a result tree 3. XSL processor analyzes the templates and patterns associated with them to process different parts of the document tree Rearranged above steps for corrected processing of XSL | 1, 3, 2
 Considering a linear model applied to a book the only disadvantage that occurs is that if the book is revised and the page number and line number of the topic changes the model fails to work. Is the statement a valid statement? | Valid
-Considering the following XML document, what is the result of count(//*): <?xml version="1.0" encoding="UTF-8"?> <root>       <employee id="45">                 <name>John</name>                 <salary>$100,000</salary>       </employee> </root> | 4
 Considering the following XML document, what is the result of count(//*): <?xml version="1.0" encoding="UTF-8"?> <root> <employee id="45"> <name>John</name> <salary>$100,000</salary> </employee> </root> | 4
 Crimson and Xerces are some of the browsers | False
 DOCTYPE declarations are specified in the prolog of the XML document | True
@@ -297,7 +276,6 @@ Declarations are sorted by the order specified | True
 Declarations are sorted by weight and origin | True
 Declaring an attribute as 'optional, -, -' means | Attribute may occur once and have any value
 Default Fetch Behavior for One-To-Many | Lazy
-Default Fetch Behavior for One-To-One | Eager
 Deployment properties are stored in a _______________________ file. | XML
 Describing an object in terms of behaviors without concern for how those behaviors are actually implemented is called ___ | data abstraction
 Difference between XML and HTML | HTML was designed to display data and focus on how data looks
@@ -310,8 +288,6 @@ Document Object Model allows programmers to write different set of code for inte
 Document Object Model allows programs and scripts to access and update content, structure and style of documents in a standard way | True
 Document Object Model is platform-dependent? | false
 Document Object Model treats a document as an object? | True
-Document Structure is determined by | Structural Markup
-Document Type Definition | DTD (acronym)
 Document object is the only object that is created. | True
 Document prolog can consist of version declaration, DTD comments and processing instructions. | True
 Documents that follow the XML tag rules, but don't have a DTD are well-formed documents. | True
@@ -373,11 +349,7 @@ Given some statement (a) window.handleError (b) window.status = "Error: " + errT
 Given that a servlet has been mapped to /account/. Identity the HttpServletRequest methods that will return the /account segement for the URI: /myapp/account/. | getServletPath
 Given the XML code fragment <?xml version="1.0" encoding="UTF-8"?> <library xmlns=http://www.fpt.edu.vn xmlns:article=http://www.article.fpt.edu.vn xmlns:person="http://www.biolography.com.vn"> <book article:id="B0001" id="IB8976"> <article:title>The Firm</article:title> <person:author>John Grisham</person:author> <article:price>99</article:price> </book> </library> | The XML code fragment is not validated because no DTD document is referenced
 Given the following deployment descriptor:<web-app> context-param><param-name>jdbcDriver</param-name><param-value>sun.jdbc.odbc.JdbcOdbcDriver</param-value></context-param><servlet><servlet-name>InitParams</servlet-name><servlet-class>InitParamsServlet</servlet-class></servlet> ..</web-app>What is the outcome of running the following servlet? (Choose one.)public class InitParamsServlet extends HttpServlet { protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {ServletContextsc = this.getServletContext(); PrintWriter out = response.getWriter(); out.write("Initialization Parameter is: " + sc.getInitParameter("jdbcDriver")); }} | "Initialization Parameter is: null" returned to the requester
-Given: 1. <?xml version="1.0"?> 2. <note date="12/11/99"> 3. <to>Ravi</to> 4. <from>Amit</from> 5. <heading>Final Exam</Heading> 6. <body>Try yourself<body> 7. </note> Choose the correct statement | Line 6 contains error
-Given: <?xml version="1.0" encoding="UTF-8"?> <email> <to>Joe</to> <from>John</from> <heading>Final Exam</heaDing> <body>Try your self</body> </eMail> Choose the correct statement Choose one answer. | The document is not well-formed
-Given: <HTML> <HEAD> <TITLE>DHTML Event Model - ONLOAD</TITLE> <SCRIPT LANGUAGE = " "> var value = 0;  function startTimer(){window.setInterval( "updateTime()", 1000 ); } function updateTime(){ value++; pText.innerText = value; }</SCRIPT> </HEAD> <BODY ONLOAD = "startTimer()"> <P><A ID = "pText">0</A></P> </BODY> </HTML> | It counts the number of seconds elapsed viewing the page.
 Giving a local function variable the same name as a global variable will result in which of the following? | The local variable will "hide" the global variable.
-Google Chrome supports XML, XSLT, XPath from version _____. | 1
 H1{font-size xx-large} Is the above statement syntactically correct to make the heading font extra large? | No
 HTML code:<B> Customer </B><p>Michelle Abraham <br>      Salmonella Apartments<br>      Programmer<br></p>Peter is asked to represent the information given in the HTML code snippet above in XML. He represents the information as follows: <CUSTOMER> <NAME> Michelle Abraham  <ADDRESS> Salmonella Apartments </NAME> </ADDRESS> <PROFESSION> Programmer </PROFESSION> </CUSTOMER> Identify the error in the above code and suggest a solution for the same. | Error on line: <NAME> Michelle Abraham <ADDRESS> Salmonella Apartments </NAME> </ADDRESS>  .  Solution: The closing tag of the Name element should be written before the ADDRESS element.
 HTML linking is one to one and is hardcoded in the HTML file. This indicates that HTML has a robust linking mechanism which is an advantage of using HTML. | False
@@ -400,16 +372,13 @@ How do you round the number 8.25, to the nearest whole number? | Math.round(8.25
 How do you write a conditional statement for executing some statements only if "i" is equal to 5? | if (i==5)
 How does a "for" loop start? | for (i = 0; i <= 5; i++)
 How is an empty XML element defined? | All of the above.
-How is an empty element field defined | All of the above
 How many components do the JAXB Architecture provide? | Schema compiler, Schema generator, Binding runtime framework
 How many different kind of loops are there in JavaScript | Two. The "for" loop and the "while" loop
 How many indicators are present in Schema? | 7
 How many numbers are printed, when the following JSTL code fragment is executed? Select the one correct answer.<%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %> <c:forEach var="item" begin="0" end="10" step="2"> ${item} </c:forEach> | 6
 How many numbers gets printed when the following JSTL code fragment is executed? Select the one correct answer.<%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %> <c:set var="item" value="2"/> <c:choose> <c:when test="${item>0}"> <c:out value="1"/> </c:when> <c:when test="${item==2}"> <c:out value="2"/> </c:when> <c:when test="${item<2}"> <c:out value="3"/> </c:when> <c:otherwise> <c:out value="4"/> </c:otherwise> </c:choose> | One number gets printed.
 How many parameters are there for deleteData() method ? (st art, length) | 2
-How many parameters are there for deleteData() method ? | 2
-How many parameters are there for replaceData() method ? (start, length,string) | 3
-How many parameters are there for replaceData() method | 3
+How many parameters are there for replaceData() method ? | 3 (start, length,string)
 How many type of XML parser does? | . Validating Parsers and Non-Validating Parsers
 How to unmarshall XML into Java objects? Convert from XML to Java objects. | JAXBContext context = JAXBContext.newInstance(Cars.class);Unmarshaller u = context.createUnmarshaller(); Cars cars = (Cars) u.unmarshal(new FileInputStream("cars.xml"));
 How to use external javascript file in a HTML file? | script language="JavaScript" src="filename.js"
@@ -423,11 +392,9 @@ Identifiers that represent local variables in a function ________. | exist while
 Identifiers which have static duration ________. | are globally accessible to the script
 Identify correct statement about a WAR file.(Choose one) | It contains web components such as servlets as well as EJBs
 Identify if the following XML document code is valid.		<?xml version="1.0"?> 	<to>Joe</to> 	<from>John</from> 	<heading>Reminder</heading> 	<body>Dont forget me this weekend!</body> | Invalid
-Identify if the following XML document code is valid. <?xml version="1.0"?> 	<note> 	<to>Joe</to> 	<from>John</from> 	<heading>Reminder</heading> 	<body>Dont forget me this weekend!</body> 	</note> | Valid
 Identify if the following XML document code is valid. <?xml version="1.0"?>   <note>  <to>Joe</to>  <from>John</from>   <heading>Reminder</heading>   <body>Dont forget me this weekend!</body>   </note> | Valid
 Identify if the following XML document code is valid. <?xml version="1.0"?> <note> <to>Joe</to> <from>John</from> <heading>Reminder</heading> <body>Dont forget me this weekend!</body> </note> | Valid
 Identify if the following code is correct?      <b><i>This text is bold and italic</b></i> | Incorrect
-Identify if the following code is correct? <b><i>This text is bold and italic</b></i> | Incorrect
 Identify the attribute applied to a property to give it precedence over other properties. | !important
 Identify the correct statements about style sheets: | A Style sheet is a set of instructions to display the+A style sheet separates presentation layer from the content data of the document.
 Identify the correct statements related to 'createNode method': | When a node is created, it is created in context of the namespace mentioned.
@@ -477,13 +444,11 @@ Implements the method of ErrorHandler, EntityResolver, DTDHandler : | DefaultHan
 In CSS, identification of a selector context is done by using a: | Period
 In CSS, separation of multiple value combinations is by using a: | Semi-colon
 In CSS, when a style is applied to an element containing other elements inside it | The style is applied to the element and all the other elements contained in it
-In DOM, a node can have | More than one children nodes
 In DOM, it is not necessary that an object for a valid node type will always be returned. | True
 In DTD, XML element attributes are declared with a/an _________ declaration. | ATTLIST
 In EJB 2.0, ejb-jar.xml deployment descriptor file must be placed in ___________ folder. | META-INF
 In JavaScript, all objects and Arrays are passed to functions by ________. | reference
 In JavaScript, capital letters are different from lowercase letters? | Yes
-In JavaScript, numbers and boolean values are passed to functions by ________. | value
 In SAX, to provide customized DTD handling, application need to implement | DTDHandler
 In VBScript, the unit of object-oriented programming is the ________. | class
 In XLink, how can you ensure that the content of a linked document appears in a new browser window | By setting the value of the show attribute to new.
@@ -493,7 +458,6 @@ In XPath, the structure of an XML document is viewed conceptually as a pyramid, 
 In XPath, you reference an element by using it's __________. | Name
 In XSL the different source elements are separated by a: | pipe-stem
 In XSL the sign that indicates that sorting takes place in the descending order is: | '-'
-In XSL, an _____ instruction do contains the template, which is been applied to each node selected with the select attribute | xsl:for-each
 In XSLT, a string is a sequence of one or more Unicode character | False
 In Xpath, how many type of nodes in the tree: | 7
 In Xpath, which node has a parent node and it may have child node too: | Text
@@ -542,18 +506,14 @@ Is it easier to process XML than HTML | true
 Is it legal to have an element and a complex type with the same name? | y
 Is it possible to share aHttpSession object between a Java Server Page and Enterprise Java Bean? | Yes, you can pass the HttpSession as parameter to an EJB method, only if all objects in session are serializable
 Is the DOCTYPE declaration compulsory ? | no
-Is the DOCTYPE declaration compulsory? | no
 Is the DTD element type "ANY" equivalent with the XML Schema element "anyType" ? | no
 Is the following JSP code legal? Select the one correct statement. <%@page info="test page" session="false"%>  <%@page session="false"%> | No. This code will generate syntax errors
 Is the following XML Schema definition valid ? | no
-Is the following XML instance valid | no
 Is the following attribute valid?      <!ATTLIST Test4 an_attribute ID #FIXED "value"> | No
-Is the following attribute valid? <!ATTLIST Test4 an_attribute ID #FIXED "value"> | No
 Is the following code for commenting in XML valid? <!-- Comment1 <!-- Comment2 --> --> | Invalid
 Is the following statement true or false. URL rewriting may be used when a browser is disabled. In URL encoding the session id is included as part of the URL. | true
 Is the text node a direct child of the enclosing element in XPath | n
 Is this statement true or false. The deployment descriptor of a web application must have the name web.xml . In the same way the tag library descriptor file must be called taglib.xml | false
-It defines the document structure with a list of _______. | legal elements
 It is a markup language that lets information systems share structured data | xxx
 It is possible to have a property with multiple values | True
 It is usually advisable to keep as much JavaScript as possible in which section? | Head
@@ -565,7 +525,6 @@ JSP pages have access to implicit objects that are exposed automatically. One su
 JavaScript lines end with what? | semicolon
 JavaServer Pages (JSP) technology enables you to mix regular, static HTML with dynamically generated content from servlets. You simply write the regular HTML in the normal manner, using familiar Web-page-building tools | True
 John is an XML programmer. He writes the following code to represent the items of a toy company: <?xml version="1.0" encoding="UTF-8"?> <!--PRODUCTDATA is the root element--> <PRODUCTDATA> <PRODUCT PRODID="P001"> <PRODUCTNAME>Barbie Doll</PRODUCTNAME> <DESCRIPTION> The price of this toy is < 200</DESCRIPTION> <PRICE>$20.00</PRICE> <QUANTITY>12</QUANTITY> </PRODUCT> </PRODUCTDATA> Identify the error in the above code and suggest a solution for the same. | Error on line: <PRODUCT PRODID="P001"> Solution: He should use quotP001; instead of "P001".
-John is an XML programmer. He writes the following code to represent the items of a toy company: <?xml version=”1.0” encoding=”UTF-8”?> <!--PRODUCTDATA is the root element--> <PRODUCTDATA>   <PRODUCT PRODID=”P001”>     <PRODUCTNAME>Barbie Doll</PRODUCTNAME>     <DESCRIPTION> The price of this toy is < 200</DESCRIPTION>     <PRICE>$20.00</PRICE>     <QUANTITY>12</QUANTITY>   </PRODUCT> </PRODUCTDATA> Identify the error in the above code and suggest a solution for the same. | Error on line: <PRODUCT PRODID="P001">    Solution: He should use quotP001; instead of "P001".
 John, an XML developer, uses DOM to define the logical structure of documents and the way a document is accessed and manipulated. He wants to use XML DOM objects to traverse, read, and manipulate the structure and content of an XML document. John wants to represent the complete document map, which contains all the information in an XML document. He also wants to create an instance of the DOMDocument object to be able to work with any XML document. Which one of the following objects should John use? | DOMDocument
 Kind of Parsers are | non-validating and validating
 LF | XML stores a new line as __________
@@ -573,9 +532,10 @@ Leaf nodes have child nodes under them? | False
 Length of XML tag is dependent on the processor. | True
 Linear Model is applied to dynamic document object? | False
 Local variables have ________ duration | c) automatic
-Local variables have ________ duration. | automatic
 Logical structure of data can be interpreted and used in many ways by various applications due to XML tags. | True
 MC: How many comparisons will a linear search function makes before finding a match if the search key has a value of 3 and the array x has the values: x[ 0 ] = 0 x[ 1 ] = 2 x[ 2 ] = 1 x[ 3 ] = 4 x[ 4 ] = 3 x[ 5 ] = 3 | 5
+MC: How many comparisons will a linear search function makes before finding a match if the search key has a value of 3 | 5
+ML parser checks for validity and well formed ness? | true
 MSXML can only be used with JavaScript. | False
 Manipulating the XML document through DOM does not require any objects of the document to be created. | True
 Markup includes | All of the above
@@ -583,7 +543,6 @@ Match the correct entity names with the respective characters 	a) &amp;			1) < 	
 Match the correct entity names with the respective characters   &amp;      1) <  &gt;       2) '  &quot;     3) >  &lt;       4) "  e) &apos;     5) & | a-5 ,b-3 ,c-4 ,d-1 ,e-2
 Match the correct entity names with the respective characters a) &amp; 1) < b) &gt; 2) ' c) &quot; 3) > d) &lt; 4) " e) &apos; 5) & | a-5 ,b-3 ,c-4 ,d-1 ,e-2
 Match the following Absolute units & Relative units with their respective values 	a)Ex				1)Inches 	b)In				2)Pixel  	c)Px				3)Pica 	d)Em				4)Fonts height 	e)Pc				5)Height of the letter 'x' | a-5,b-1,c-2,d-4,e-3
-Match the following Absolute units & Relative units with their respective values  a)Ex        1)Inches  b)In        2)Pixel   c)Px        3)Pica  d)Em        4)Fonts height  e)Pc        5)Height of the letter 'x' | a-5,b-1,c-2,d-4,e-3
 Match the following Absolute units & Relative units with their respective values a)Ex 1)Inches b)In 2)Pixel c)Px 3)Pica d)Em 4)Fonts height e)Pc 5)Height of the letter 'x' | a-5,b-1,c-2,d-4,e-3
 Match the xml data againts its corresponding data type in Schema? <start>05:30:10.5</start> | time
 Message-Driven Bean does not have a home interface, local home interface, remote interface, or a local interface. | True
@@ -621,8 +580,6 @@ Only a browser can access a result document. | False
 Order by | Places all return values in ascending order by default
 PCDATA is | An XML element that contains parsed character data
 PCDATA means: | parsed character data
-PCDATA refers to | #PCDATA refers to
-PCDATA refers to | Parsed character data
 Parameter entities are: | used only in DTDs + always parsed entities
 Parameter entities can appear in | dtd file
 Parameter entities use ampersand (&) and semicolon (;) as delimiters? | false
@@ -632,59 +589,23 @@ Prefix is: | An alias selected by a document author
 Processing instructions are application specific. | True
 Processing instructions are passed to the target, | True
 Property documentElement of DOMDocument object return: | An object representing the root element if the XML document
-Q.22) #PCDATA refers to | Parsed character data
-QN=10 (2734) Namespaces are defined using | xmlns:[prefix] attribute
-QN=14 (2731) What does the keyword SYSTEM indicate in the following code? | Book.dtd is an external DTD
-QN=17 (2771) See the snipset below and choose one answer: | -3
-QN=18 (2769) XSLT allows any kind of data to be tranformed into | Boolean
-QN=19 (2950) Document Object Model is platform-dependent? | false
-QN=2 (2711) ________ is a markup language for describing how content is rendered and ________ is a markup language for describing | HTML, XML.
-QN=22 (2752) Represents a collection of attribute nodes | XMLDOMNodeList object
-QN=26 (2782) Consider the following script. What is wrong with the following code? | The word var must be placed before thirdNumber in line 4.
-QN=27 (2788) A procedure for solving a problem in terms of the actions to be executed and the order in which these | an algorithm
-QN=27 (2873) MC: How many comparisons will a linear search function makes before finding a match if the search key has a value of 3 | 5
-QN=28 (2897) What is the significance of the following CSS rule? | It will apply the specified style to text enclosed by either LI or EM tags.
-QN=29 (2827) What would the browser display if it executed the following script? | 10
-QN=29 (2893) Which of the following selections is the proper way to apply this CSS rule: | <P CLASS = "blue">
-QN=32 (2809) What is the value of i after the following statements? | 3
-QN=32 (2862) What would the browser display if this script was executed? | 9
-QN=33 (2885) What will value contain after the following code is executed? | a large integer representing the number of milliseconds between midnight January 1, 1970 and the current date
-QN=34 (2813) What would the browser display if the following script was executed? | Nothing, the script would generate an error
-QN=34 (2879) What does the value string contain after the following code is executed? | Good luck on the test
-QN=35 (2861) What would the browser display if this script was executed? | undefined
-QN=39 (2751) SAX support random access | false
-QN=4 (2722) Which of the following are valid tags? | <FPT_UNIV>
-QN=40 (2800) What would the browser display if the following code is executed in a script? | Failed. You must take this course again.
-QN=41 (2819) What is the value of num after the following statement is performed? | 2
-QN=41 (2851) Script-level variables have ________ duration. | static
-QN=42 (2880) What does the value string contain after the following code is executed? | a link to www.deitel.com with the text "Good luck on the test"
-QN=45 (2870) What will the browser display if the following script is executed? | 1 2 3 4 5 6 7 8 9
-QN=46 (2779) Consider the following HTML code. | Hello World
-QN=46 (2812) What is wrong with the following line of code? | Nothing
-QN=47 (2810) What is the value of i after the following statements? | 0
-QN=5 (2721) Which of the following XML code snippets is/are correct? | <BOOK><AUTHOR> abc...</AUTHOR></BOOK>
-QN=50 (2842) The value a in the following statement is called the ________ and the value b is called the ________. | shifting value, scaling factor
-QN=50 (2881) What is the value of s3 after the following code is executed? | onetwo
-QN=6 (2729) Which statements are true? | The DTD specifies the grammatical structure of an XML document.
-QN=9 (2928) XML parser checks for validity and well formed ness? | true
 REQUIRED attributes value means: | The attribute value must be included in the element
 REQUIRED specifies that an element is required in all XML documents that use the DTD. | False
 RESTful WS place a emphasizes on ____ communication | stateless
 Regarding URL rewriting for session support, which of the following is true? | Every URL that the client uses must include jsessionid.
-Represents  a collection of attribute nodes | XMLDOMNamedNodeMap
+Represents a collection of attribute nodes | XMLDOMNodeList object
 Represents a collection of attribute nodes: | XMLDOMNamedNodeMap
 Restrictions on XML elements are called | facets
 Restricts string types using regular expressions? | pattern
 Review the following scenario; then identify which security mechanisms would be important to fulfill the requirement. (Choose one.) An online magazine company wishes to protect part of its website content, to make that part available only to users who pay a monthly subscription. The company wants to keep client, network, and server processing overheads down: Theft of content is unlikely to be an issue, as is abuse of user IDs and passwords through network snooping. | Authorization and Authentication
 Root element must not be a non empty tag? | false
-Root element must not be a nonempty tag. | False
 SAX includes functions that are not supported by DOM. | True
 SAX is developed by XML-DEV mailing list | True
 SAX is | An XML parser
 SAX makes sequence of call to a handler function? | true
 SAX parser has high memory consumption | False
 SAX requires the entire document to be stored in the memory | False
-SAX support random access | False
+SAX support random access | false
 SAX uses | Push parsing machenic for processing
 SGML stand for | Standard Generalization Markup Language
 SOAP stands for | Simple Object Access Protocol.
@@ -695,12 +616,9 @@ Schema is an _____ based alternative | XML
 Schemas can be documented in human readable format by using | Comments
 Script-level variables have ________ duration. | static
 See the extract from web.xml of web application "mywebapp" on server named myserver, runs on port 8080: <servlet-mapping><servlet-name>ServletA</servlet-name><url-pattern>/</url-pattern></servlet-mapping><servlet-mapping><servlet-name>ServletB</servlet-name><url-pattern>/bservlet.html</url-pattern></servlet-mapping><servlet-mapping><servlet-name>ServletC</servlet-name><url-pattern>*.servletC</url-pattern></servlet-mapping><servlet-mapping><servlet-name>ServletD</servlet-name><url-pattern>/dservlet/*</url-pattern></servlet-mapping>Given that a user enters the following into her browser, which (if any) of the mapped servlets will execute? (Choose one.) http://myserver:8080/mywebapp/Bservlet.html | ServletA
-See the snipset below and choose one answer | -2
 See the snipset below and choose one answer:  <xsl:template match=”BOOK*position()!=2+”>      <xsl:value-of select=”.”/>  </xsl:template> | Select all BOOK elements that are not the second child of their parents
-See the snipset below and choose one answer:  <xsl:value-of select=”floor(-2.3)”/> | -3
 See the snipset below and choose one answer: <xsl:for-each select=”LIST//TITLE”>…</xsl:for-each> | Match all <TITLE> elements one or more level deep in the <LIST> element
-See the snipset below and choose one answer: <xsl:template match=”BOOK[position()!=2]”> <xsl:value-of select=”.”/> </xsl:template> | Select all BOOK elements that are not the second child of their parents.
-See the snipset below and choose one answer: <xsl:value-of select=”ceiling(-2.3)”/> | -2
+See the snipset below and choose one answer: | -3
 Select the BEST case to Use Entity Beans? (Choose one) | At any given time, only one client has access to the bean instance.
 Select the BEST case to use message-driven bean?(Choose one) | Need to avoid tying up server resources andneed the applications to process messages asynchronously
 Select the correct JMS programming model. | Locate the JMS Driver->Create a JMS connection->Create a JMS session->Locate the JMS destination->Create a JMS producer or a JMS consumer->Send or receive message.
@@ -737,8 +655,6 @@ Syntax for declaring an external DTD to an XML document is: | <!DOCTYPE N1 SYSTE
 Syntax for element declaration is | <!ELEMENT element-name (element-content type)>
 Syntax for referencing a cascading style sheet in an XML document is: | <?xml-stylesheet type="text/css" href="url"?>
 S{margin-right:-3cm;} 	Is the above statement valid? | No
-S{margin-right:-3cm;}   Is the above statement valid? | No
-Tags can begin with | All of the above
 Templates are been ordered according to their ________ which can be specified with the priority attributte. | priority
 Text style sheets use which of the following MIME types? | text/css
 The 'appendChild()' method of the DOMDocument Object adds: | a new node
@@ -775,9 +691,8 @@ The JAXB _____ method is used to read from a URL and convert it from XML to Java
 The Java Persistent API defines the Query interface. Which statement is true about the Query.executeUpdate method ? | It must always be executed within a transaction
 The JavaScript keyword this always refers to ________. | the element in which the statement resides.
 The ONBLUR event is associated with ________ | (d)  an element losing focus.
-The ONBLUR event is associated with ________. | an element losing focus.
 The ONERROR event is used to handle all of these except. | User errors.
-The ONFOCUS event fires when ________. | an element is clicked.
+The ONFOCUS event fires when ________. | (c)  an element is clicked.
 The ONLOAD event fires ________. | whenever an element finishes loading successfully.
 The SAX parser creates a node by using | None of the above
 The SAX parser is able to transverse an XML document | False
@@ -842,14 +757,12 @@ The attributes you can use in an XML document are: version (required; the XML ve
 The available document models of DOM are: | Tree Model+Linear Model
 The best way to develop and maintain a large program is to construct it from small, simple pieces called ________. | modules
 The binding of TDC to a table requires setting the DATASRC property in the ________. | table element
-The character is referred to as a________. | field delimiter
 The child axis (XPath) can select only element nodes. | True
 The choice element cannot mention the minOccurs and maxOccurs attribute | False
 The chroma filter is used to ________. | apply transparency effects dynamically
 The data about employees is stored in an XML document. The data is to be presented in a browser window in the ascending order of BASICPAY and descending order of EMPLOYEECODE. Which of the following code snippets should be used in the XSLT style sheet to sort the employee data? | <xsl:sort select=“BASICPAY” data-type=“number” order=“ascending”/>    <xsl:sort select=“EMPLOYEECODE” data-type=“text” order=“descending”/>
 The data() function returns the text value of a variable. | False
 The declaration is used to declare the xml tag library using in JSP as | . <%@ taglib prefix=“x” uri= “http://java.sun.com/jsp/jstl/xml” %>
-The declaration is used to declare the xml tag library using in JSP as | None of the others
 The declaration is used to declare the xml tag library using in JSP as | none
 The default model for complex type, in XML schemas for element is | elementOnly
 The default scripting language for Netscape and Internet Explorer is ________. | ECMAScript
@@ -862,16 +775,13 @@ The element instructs the CSS to evaluate a condition before extracting an eleme
 The element is used to | Extract text from the source document
 The entities that are used only in DTDs are referred to as | General entities
 The exception-type element specifies an exception type and is used to handle exceptions generated from a servlet. Which element of the deployment descriptor includes the exception-type as a sub-element. Select the one correct answer | error-page
-The exception-type element specifies an exception type and is used to handle exceptions generated from a servlet. Which element of the deployment descriptor includes the exception-type as a sub-element? Do not include the element in enclosing parenthesis | error-page
 The first XSL-FO element you must use in an XSL-FO document is | the <fo:root> element.
 The first two parameters in the addPoint method ________. | sets the point source of the light
 The floor (num) function returns the largest integer that is not greater than the number argument. | True
 The following paragraph describes the differences between XML and HTML but there are some FEATURES are NOT correct. Please find out them.  XML features * Defined set of tags designed for web display  * Format driven  * End tags required for well-formed documents  * Quotes required around attributes values  * Slash required in empty tags   HTML features * User definable tags  * Content driven  * End tags not required  * Quotes not required  * Slash not required | It should be swap between “Defined set of tags designed for web display” and “Format driven” of XML to “User definable tags” and “Content driven” of HTML
-The following paragraph describes the differences between XML and HTML but there are some FEATURES are NOT correct. Please find out them. XML features Defined set of tags designed for web display Format drivenEnd tags required for well-formed documents Quotes required around attributes values Slash required in empty tags HTML features User definable tags Content driven End tags not required Quotes not required Slash not required | It should be swap between "Defined set of tags designed for web display" and "Format driven" of XML to "User definable tags" and "Content driven" of HTML
 The following statement is true or false? <question>â€oeIf the isThreadSafe attribute of the page directive is true, then the generated servlet implements the SingleThreadModel interface.â€ | True
 The font-size option 'larger' is used for | <relative-size>
 The format for writing an attribute-related predicate is: | element[@element's attribute some test here]
-The format for writing an element-related predicate is: | parent[child some test here]
 The formatting components of XSL are not supported by IE5. | True
 The hierarchical structure of the XML document is known as the XML Tree and it consists of root, nodes and leaves? | True
 The instantiation of a session bean is done by the ____________________ while the management of the lifetime of the bean is done by the ___________________________. | Container/EJB server
@@ -901,7 +811,6 @@ The only allowed operation in a result tree fragment is on a number | False
 The order and the number of elements that appears in the mixed content cannot be specified in the schema | False
 The outermost layer of the box model is the ________. | margin
 The page directive is used to convey information about the page to JSP container. Which of these are legal syntax of page directive. Select the two correct statement | <%@ page info="test page" session="false"%> <%@ page session="true" %>
-The page directive is used to convey information about the page to JSP container. Which statement is legal page directive. Select one correct statement | <%@ page info="test page" session="false"%>
 The prefix used in an attribute is used as a reference to the namespace. | True
 The process of turning the result of an XSL transformation into a suitable output form for a reader or listener is identified as: | Formatting
 The processing part in a template in XSL defines the way the styling is to be applied to the child nodes. | True
@@ -916,7 +825,6 @@ The roundhalftoeven() function rounds half the value returned by a function. | F
 The same servlet class can be declared using different logical names in the deployment descriptor. | True
 The same version of a DOM parser must be used on all computers. | False
 The sendError method defined in the HttpServlet class is equivalent to invoking the setStatus method with the following parameter. Select the one correct answer | SC_NOT_FOUND
-The sendRedirect method defined in the HttpServlet class is equivalent to invoking the setStatus method with the following parameter and a Location header in the URL. Select one correct answer. | SC_MOVED_TEMPORARILY
 The sequence element provides an XML representation for describing a selection from a set of element types | False
 The servlet container is responsible for the ____ of the servlet | lifecycle
 The simplest way to reference a DHTML element is by its ________ attribute. | ID
@@ -928,11 +836,9 @@ The style of programming in which the user interacts with a GUI component is cal
 The syntax for defining an attribute is: | <xs:attribute name="xxx" type="yyy"/>
 The syntax for parameter entity is | <! ENTITY % NAME DEFINITION>
 The technique of developing and maintaining a large program by constructing it from small, simple pieces is called ________. | divide and conquer
-The third parameter in the addPoint method ________. | sets the height of the point source
 The translate () function returns the first argument string with occurrences of characters in the second argument string replaced by the character at the corresponding position in the third argument string. | True
-The use of a DTD in XML development is | required when validating XML documents
 The use of namespace in a document can be recognized using a ______ in the tag name. | colon
-The value a in the following statement is called the ________ and the value b is called the ________. face = Math.floor( a + Math.random() * b ); | shifting value, scaling factor
+The value a in the following statement is called the ________ and the value b is called the ________. | shifting value, scaling factor
 The value of the CSS styling property can be a color value. | True
 The values of an attribute of type ID is unique | per document instance;
 The version is specified in ActiveXObject(fiMSXML2.DOMDocument.4.0fl) because | Versions are designed to coexist with previous versions.
@@ -944,8 +850,8 @@ The word top in the term top-down stepwise refinement refers to which of the fol
 The xml-stylesheet element has which two attributes? | type & href
 The xs:enumeration tag is used to define a valid value for an attribute. | True
 The xs:sequence tag | Specifies the sequence in which elements must appear in an XML document
+The xsl:attribute do generates the elements in the time of processing. | True
 The xsl:choose element is used for the purpose of selection between the several possibilities. | True
-The xsl:element generates the elements in at time of processing. | True
 The xsl:if is used to: | Evaluate a condition expression against the content of the xml file
 The xsl:template is used to | Define a template that can be applied to a node to produce desired output
 The xsl:value-of element can only be used to retrieve the value of the xml elements; attributes must be retrieved with the xsl:attrib-value element. | False
@@ -972,12 +878,10 @@ To create a data island we use the _____________HTML element | <XML>
 To describe data XML uses a _________ | Document Type Definition
 To divide the value of the seventh element of array a by 2 and assign the result to the variable x, we would write ________. | x = a[ 6 ] / 2
 To keep the browser from performing a script as soon as it is loaded you need to write the script as a what ? | function
-To match the root node in XMLT transform the syntax will be | <xsl:template match=" /">To prevent a type from being derived for defining new types you can specify | <complexType name=”Address” final=”restriction” />
 To read the cookies that come back from the client, you call getCookies on the HttpServletRequest. | True
 To refer to a particular location or element in the array, we specify the name of the array and the ________ of the particular element in the array. | position number
 To select the id attribute's value from the code: <student id="1">Jack</student>, you would use the following code: | <xsl:value-of select="@id" />
 To send binary outptut in a response, the following method of HttpServletResponse may be used to get the appropriate Writer/Stream object. | getOutputStream
-To send binary output in a response, the following method of HttpServletResponse may be used to get the appropriate Writer/Stream object. Select the one correct answer. | getOutputStream
 To specify how whitespace characters should be handled, we would use the whiteSpace | constraints
 To use the external DTD we have the syntax | <?xml version="A.0" standalone="no"?><! DOCTYPE DOCUMENT SYSTEM "order.dtd"?>
 Treating a document as an object, extracting information, making changes and querying the document through code is termed as: | DOM
@@ -995,7 +899,6 @@ Use this attribute in the enclosing element | xmlns="http://www.superduperbigco.
 Using DTD, _________ parser checks for validity. | Validating
 Using the xsl:prefix before every XSL element is recommended by NOT required. | False
 VBScript is ________ | a) case sensitive like JavaScript
-VBScript is ________. | case sensitive like JavaScript
 Valid XML document means (most appropriate) | the XML document has DTD associated with it & it complies with that DTD
 Value of the local variable is bounded to which element | xsl:when
 Values used in font-weight are | normal+bolder+lighter
@@ -1022,7 +925,6 @@ What are the four annotations used to annotation most methods to specify which o
 What are the four key elements of a wsdl file | types, messages, port type, binding,
 What are the predefined attributes | xml:lang, xml:space
 What are the three JSP Servlet Methods | jspInit()
-What are the three JSP Servlet Methods | jspInit() jspDestroy() _jspService()
 What are the two main purposes of Transaction Support | Recovery, Concurrency
 What are the two methods that are considered to be the entry point to a servlet | doGet(), doPost()
 What are the two prevailing styles of web services | RESTFUL and SOAP
@@ -1034,47 +936,37 @@ What does ACID standfor | Atomic, Consistent, Isolated, Durable
 What does CGI stand for | Common gateway interface
 What does DDL stand for | Data Definition Language
 What does DTD stand for | Document Type Definition
-What does DTD stand for? | Document Type Definition.
 What does JAX-RS standfor | Java API for XML and RESTful services
 What does JAXB stand for? | Java Architecture for XML Binding
 What does REST stand for | Representational State Transfer
 What does SAX stand for | Simple API for XML
-What does SOAP stand for | Simple Object Access Protocol.
 What does UDDI stand for | Universal Description, Discovery and Integration
 What does WSDL stand for | Web service Description Lanaguage
 What does XML stand for? | eXtensible Markup Language
-What does XSL stand for? | eXtensible Stylesheet Language
 What does a validating parser if it encounters a valid DOCTYPE declaration but it cannot load the associated DTD file because the given URL is wrong? | This is a fatal error: the parsing will stop immediately.
 What does method characters()  of ContentHandler interface receive events for? | Character data
 What does the Option Explicit statement do? | It does not allow the programmer to use variables without declaring them first.
 What does the ScriptEngine function do? | It returns the type script being used.
 What does the following CSS rule do?.note { font-size: 1.5em } | It multiplies all text object font sizes with CLASS = "note" by 1.5.
-What does the following HTML document do? <HTML> <HEAD> <TITLE>DHTML Event Model - ONLOAD</TITLE> <SCRIPT LANGUAGE = "JavaScript"> var value = 0; function startTimer(){ window.setInterval( "updateTime()", 1000 ); } function updateTime(){ value++; pText.innerText = value; } </SCRIPT> </HEAD> <BODY ONLOAD = "startTimer()"> <P><A ID = "pText">0</A></P> </BODY> </HTML> | It counts the number of seconds elapsed viewing the page.
 What does the following statement do? <SPAN ID = "colorName" STYLE = "font-family: monospace" DATASRC = "#Colors" DATAFLD = "ColorName"></SPAN><BR> | It assigns the TDC control named Colors to a span element for display purposes.
 What does the following statement do?Math.floor( Math.random() * 12 ); | This creates a random number from 0 up to but not including 12.
-What does the keyword SYSTEM indicate in the following code? <?xml version ="1.0"?> <!DOCTYPE Book SYSTEM "book.dtd"> | Book.dtd is an external DTD
-What does the keyword SYSTEM indicate in the following code?<?xml version =”1.0”?><!DOCTYPE Book SYSTEM “book.dtd”> | Book.dtd is an external DTD
+What does the keyword SYSTEM indicate in the following code? | Book.dtd is an external DTD
 What does the parser do with the CDATA section of an XML document? | Passes the data to the application that uses the XML document without any translation or interpretation
 What does the srcElement event property contain? | A reference to the element that fired the event.
 What does the value string contain after the following code is executed?  var string = "Good luck on the test";  string = string.split( " " ); | Good luck on the test
-What does the value string contain after the following code is executed? var string = "Good luck on the test"; string = string.charAt( 3 ); | d
-What does the value string contain after the following code is executed? var string = "Good luck on the test"; string = string.link("www.deitel.com") | a link to www.deitel.com with the text "Good luck on the test"
+What does the value string contain after the following code is executed? | Good luck on the test
+What does the value string contain after the following code is executed? | a link to www.deitel.com with the text "Good luck on the test"
 What does the xsl:apply-imports for? | Apply the template to selected location from xsl:apply-imports
 What does the “sequence” element of XSD indicate? | All the elements specified within this element must compulsorily appear in the XML document, and they must appear in the specified order
 What gets printed when the following JSP code is invoked in a browser? Select one correct answer. <%= if(Math.random() < 0.5) %> hello<%= } else { %> hi<%= } %> | The JSP file will not compile
 What gets printed when the following JSTL code fragment is executed? Select the one correct answer.<%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %> <c:set var="item" value="2"/> <c:forEach var="item" begin="0" end="0" step="2"><c:out value="${item}" default="abc"/></c:forEach> | 0
-What gets printed when the following JSTL code fragment is executed? Select the one correct answer.<%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %> <c:set var="item" value="2"/> <c:if test="${var==1}" var="result" scope="session"> <c:out value="${result}"/> </c:if> | Nothing gets printed.
 What gets printed when the following expression is evaluated? Select the one correct answer. ${(1==2) ? 4 : 5} | 5
-What gets printed when the following expression is evaluated? Select the one correct answer. ${12 % 4} | 0
-What gets printed when the following expression is evaluated? Select the one correct answer. ${4 div 5} | 0.8
 What gets printed when the following is compiled. Select the one correct answer.<% int y = 0; %> <% int z = 0; %> <% for(int x=0;x<3;x++) { %> <% z++;++y;%> <% }%> <% if(z<y) {%> <%= z%> <% } else {%> <%= z - 1%> <% }%> | 2
 What happens when you try to access a JSP | - Browser sends HTTP request to web server
 What is NOT true about StAX? | it is a "push" parser
 What is XML | Extensible Markup Language: an application- and platform-independent way to represent data
 What is XML? | Extensible Markup Language
 What is a correct way of referring to a style sheet called "mystyle.xsl"? | <?xml-stylesheet type="text/xsl" href="mystyle.xsl"?>
-What is a correct way of referring to a stylesheet called "mystyle.xsl"? | <link type="text/xsl" href="mystyle.xsl" />
-What is a correct way of referring to a stylesheet called "mystyle.xsl”? | <?xmlstylesheet type="text/xsl" href="mystyle.xsl"?>
 What is address, phone in the declaration ? | A group
 What is output to the web page on the second access to the same instance of the following JSP? <html><body><% int x = 0; %><%= x++ %></body> </html> | 0
 What is stored inside the variable value after the following line of code is executed? var value = navigator.appVersion; | It stores a string representing the version of the browser and other information.
@@ -1086,13 +978,11 @@ What is the correct HTML for referring to an external style sheet file named mys
 What is the correct JavaScript syntax for opening a new window called "window5" ? | window.open("http://www.ex-designz.net","window5")
 What is the correct JavaScript syntax to write "Hello World"? | document.write("Hello World")
 What is the correct declaration syntax for the version of XML document | <?xml version="1.0"?>
-What is the correct declaration syntax for the version of an XML document? | <?xml version="1.0" ?>
 What is the correct syntax for referring to an external script called "xxx.js"? | <script src="xxx.js">
 What is the correct way to write a JavaScript array? | var txt = new Array("tim","shaq","kobe")
 What is the default axis in XPath ? | child
 What is the default type for an element in XML Schema ? | anyType
 What is the effect of evaluation of following expression? Select the one correct answer. ${'cat' gt 'cap'} | true
-What is the effect of evaluation of following expression? Select the one correct answer. ${(5*5) ne 25} | false
 What is the effect of executing the following JSP statement, assuming a class with name Employee exists in classes package. <%@ page import = "classes.Employee" %> <jsp:useBean id="employee" class="classes.Employee" scope="session"/> <jsp:setProperty name="employee" property="*"/> | The code sets the values of all properties of employee bean to matrching parameters in request object
 What is the effect of the following line of code? window.event.returnValue = true; | It returns a true value to signal the browser to continue its default event-handling action.
 What is the effect of the join statement in the following code? var theArray1 = [ 1, 2, 3, 4, 5, 6, 7, 8, 9, 10 ], theArray2 = [ 1, 2, 3, 4, 5, 6, 7, 8, 9, 10 ]; var value = theArray1.join( " " ); | The join method will create a string from the values in theArray1..
@@ -1109,16 +999,13 @@ What is the purpose of the line beginning with A.nodec in the following script? 
 What is the result of attempting to access the following JSP page?<question><html><question><body><question><%! public String methodA() {<question> return methodB();<question>}<question>%><question><%! public String methodB() {<question> return "JAD Final Test";<question>}<question>%><question><h2><%= methodA() %></h2><question></body><question></html> | "JAD Final Test" is output to the resulting web page.
 What is the result of the statement 17 % 5? | 2
 What is the result of writing the keyword var in a function parameter list | he result would be a JavaScript runtime error
-What is the result of writing the keyword var in a function parameter list? | The parameter following the keyword would become a static variable.
-What is the significance of the following CSS rule?LI, EM { color: red;c font-weight: bold } | It will apply the specified style to text enclosed by either LI or EM tags.
+What is the significance of the following CSS rule? | It will apply the specified style to text enclosed by either LI or EM tags.
 What is the significance of the line? C[9] LI EM { color: red; font-weight: bold } | It will apply the specified style to text enclosed by the EM tags which are within LI tags.
 What is the significance of the second function argument in the following line? window.setInterval( "run()", 100 ); | The value sets how often to run the function.
 What is the significance of the ‘+’ sign in the code given below? <!ELEMENT BOOK (AUTHOR+)> | Indicates that AUTHOR tag must occur at least once inside the BOOK element
 What is the underscore character used for in VBScript? | It is used as a line continuation character
-What is the value of i after the following statements? i = 2; i += 25; | 27
 What is the value of i after the following statements? i = 2; i- -; i- -; | 0
-What is the value of i after the following statements? i = 2; i--; i--; | 0
-What is the value of i after the following statements?i = 2;i++; | 3
+What is the value of i after the following statements? | 3
 What is the value of num after the following statement is performed? num = 2 * Math.pow( 2, 3 ); | 16
 What is the value of num after the following statement is performed?num = Math.round( 2.45 ); | 2
 What is the value of num assuming that all 12 elements of array test are initialized to 3? ++test[ 7 ]; var num = test[ 7 ]; | 4
@@ -1127,12 +1014,9 @@ What is the value of s3 after the following code is executed?var s1 = one, s2 = 
 What is this: ? | References a shared DTD
 What is wrong with the following VBScript code?  1	If (s = t) Then  2	u = s + t  3	ElseIf (s > t) Then  4	u = r  5	Else  6	u = n 7 End If | Nothing
 What is wrong with the following VBScript code?  1	Select Case x  2	Case 1  3	Call MsgBox("1")  4	Case 2  5	Call MsgBox("2")  6	Case Else  7	Call MsgBox("?") 8 End Select | Nothing
-What is wrong with the following VBScript code?  1  If (s = t) Then  2  u = s + t  3  ElseIf (s > t) Then  4  u = r  5  Else  6 u = n 7 End If | Nothing
-What is wrong with the following VBScript code?  1  Select Case x  2  Case 1  3 Call MsgBox("1")  4 Case 2  5 Call MsgBox("2")  6 Case Else  7  Call MsgBox("?") 8 End Select | Nothing
-What is wrong with the following VBScript code? If (s = t) Then u = s + t ElseIf (s > t) Then u = r Else u = n End If | Nothing
 What is wrong with the following VBScript code? Select Case x Case 1 Call MsgBox("1") Case 2 Call MsgBox("2") Case Else Call MsgBox("?") End Select | Nothing.
 What is wrong with the following line of code?       <P><FONT SIZE='5'>This is a test.</FONT></P> | Nothing
-What is wrong with the following line of code?<P><FONT SIZE='5'>This is a test.</FONT></P> | Nothing
+What is wrong with the following line of code? | Nothing
 What kind of clause is used to specify the filter criteria? | where clause
 What kind of separator can be used in a list datatype in XML Schema ? | whitespace (" ");
 What makes XML Unique | It is a standard that lets users create their own tags to structure and store data
@@ -1140,33 +1024,30 @@ What makes XML more powerful than HTML? | Its ability to adapt to new uses
 What markup language categorization determines the content of the document? | Semantic Markup
 What methods can you use with SAX to handle warnings, errors, and fatal errors? | You use methods such as the warning method to handle warnings, the error method to handle errors, and the fatalError method to handle fatal errors
 What organization presented the first version of Starndardized Generalized Markup Language (SGML) in 1980? ) | American National Standards Institute (ANSI)
-What organization presented the first version of Starndardized Generalized Markup | Language (SGML) in 1980?
 What schema groups should a group of elements be defined under in order to allow them all to appear in any sequence in a document instance? | xsd:all
 What should be the return type of the method using @PrePassivate? | void
 What statement is true when processing XML in a servlet or JSP? | A DTD or Schema must be provided for validation.
 What type of loop is shown in the script below? <SCRIPT LANGUAGE = "JavaScript"> var gradeValue = 0, total = 0, grade = 0; while ( gradeValue != - 1 ) { total = total + gradeValue; grade = window.prompt("Enter Integer Grade, -1 to Quit:", "0"); gradeValue = parseInt( grade ); }</SCRIPT> | sentinel controlled
 What type of method does SAX use to process XML documents? | Event-based
 What will happen when a servlet makes the following call within its doGet() method? getServletContext().setAttribute("userid", userid); | The userid attribute is placed in application scope.
+What will the browser display if the following script is executed? | 1 2 3 4 5 6 7 8 9
 What will the browser display if the following script is executed?< SCRIPT LANGUAGE = "JavaScript" > var theArray = [ 1, 2, 3, 4, 5, 6, 7, 8, 9 ]; modifyArray( theArray[ 3 ] ); document.write( theArray.join( " " ) ); function modifyArray( i ) { i = 11; }</SCRIPT> Nothing, the browser will generate an error. | 1 2 3 4 5 6 7 8 9
 What will value contain after the following code is executed assuming that Colors is a valid TDC control? value = Colors.recordset; | It will contain the current indexed item of the datasource.
-What will value contain after the following code is executed? var value = new Date(); value = value.valueOf(); | a large integer representing the number of milliseconds between midnight January 1, 1970 and the current date
+What will value contain after the following code is executed? | a large integer representing the number of milliseconds between midnight January 1, 1970 and the current date
 What would the browser display if it executed the following script? <SCRIPT LANGUAGE = "JavaScript"> for ( var count = 1; count <= 10; ++count ) { if ( count == 5 ) break; } document.writeln( count ); </SCRIPT> | 5
 What would the browser display if it executed the following script? <SCRIPT LANGUAGE = "JavaScript"> var total = 0; stop: { // labeled compound statement for ( var i = 0; i < 5; ++i ) { for ( var j = 0; j < 2 ; ++j ) { if ( i == 2 ) break stop; total++; } total++; } total++; } total++; document.writeln( total ); </SCRIPT> | 7
+What would the browser display if it executed the following script? | 10
 What would the browser display if the following code is executed in a script? var grade = 59 if ( grade >= 60 )        document.writeln( "Passed." ); else       document.write( "Failed. " );       document.writeln( "You must take this course again." ); | Failed
 What would the browser display if the following code is executed in a script? var x = 11, y = 14; if ( x > 13 )if ( y > 13 ) document.writeln( "x and y are > 13" ); else document.writeln( "x is <= 13" ); | x is <= 13x
+What would the browser display if the following code is executed in a script? | Failed. You must take this course again.
 What would the browser display if the following code is executed in a script?var grade = 59 if ( grade >= 60 ) document.writeln( "Passed." ); else document.write( "Failed. " ); document.writeln( "You must take this course again." ); | Failed.
 What would the browser display if the following code was executed in a script? var product = 0; while ( product <= 25 ); product = 2 + product; | nothing, the script would result in an error
 What would the browser display if the following script is executed? <SCRIPT LANGUAGE = "JavaScript"> var count = 0, total = 0; while ( count <= 5 ) { total = total + 10; count = count + 1;} document.write(total); </SCRIPT> | 60
-What would the browser display if the following script is executed? <SCRIPT LANGUAGE = "JavaScript"> var count = 5, total = 0; while ( count > -1 ) { total = total – 10; count = count – 1; } document.write(total);</SCRIPT> | -60
 What would the browser display if the following script was executed and the user entered 5 at both prompts?  1	<SCRIPT LANGUAGE = "JavaScript">  2	var firstNumber = window.prompt("Enter an integer", 0); 3	var secondNumber = window.prompt("Enter an integer",0);  4	var thirdNumber;  5	thirdNumber = firstNumber + secondNumber;  6	document.write( thirdNumber );  7	</SCRIPT> | 55
-What would the browser display if the following script was executed and the user entered 5 at both prompts? 1 <SCRIPT LANGUAGE = "JavaScript"> 2 var firstNumber = window.prompt("Enter an integer", 0); 3 var secondNumber = window.prompt("Enter an integer",0); 4 var thirdNumber; 5 thirdNumber = firstNumber + secondNumber; 6 document.write( thirdNumber ); 7 </SCRIPT> | 55
 What would the browser display if the following script was executed and the user entered 5 at both prompts? <SCRIPT LANGUAGE = "JavaScript">var firstNumber = window.prompt("Enter an integer", 0);var secondNumber = window.prompt("Enter an integer",0);var thirdNumber;thirdNumber = firstNumber + secondNumber;document.write( thirdNumber ); </SCRIPT> | 55
-What would the browser display if the following script was executed?    <SCRIPT LANGUAGE = "JavaScript">           for( int i = 0; i < 5; i++ )          document.write("X");  </SCRIPT> | Nothing, the script would generate an error
 What would the browser display if the following script was executed? <SCRIPT LANGUAGE = "JavaScript"> for( int i = 0; i < 5; i++ ) document.write("X"); </SCRIPT> | Nothing, the script would generate an error
-What would the browser display if the following script was executed? <SCRIPT LANGUAGE = "JavaScript"> for( var i = 0; i < 5; i++ ) document.write("O"); </SCRIPT> | OOOOO
-What would the browser display if this script was executed?  <SCRIPT LANGUAGE = "JavaScript">        var c = new Array(8);       for( var i = 0; i < 10; i++ )              c[i] = i;      document.write(c[9])   </SCRIPT> | 9
 What would the browser display if this script was executed? <SCRIPT LANGUAGE = "JavaScript">  var c = new Array(8) for( var i = 0; i < 10; i++ ) c[i] = i;  document.write(c[9])  </SCRIPT> | 9
-What would the browser display if this script was executed?<SCRIPT LANGUAGE = "JavaScript"> var c = new Array(8) for( var i = 0; i < 8; i++ ) c[i] = i; document.write(c[8]) </SCRIPT> | undefined
+What would the browser display if this script was executed? | 9
 What would the browser output if the following script is executed? < SCRIPT LANGUAGE = "JavaScript" > var array = [ [ 1, 2, 3 ], [ 1, 2, 3 ] ]; for ( var i in array ) { for ( var j in array[ i ] ) document.write( array[ i ][ j ] + " " ); document.writeln("<BR>"); } < /SCRIPT > | 1 2 3 1 2 3
 What would the browser output if the following script is executed? < SCRIPT LANGUAGE = "JavaScript" > vararray = [[1,2, 3], [1,2, 3]]; for (var i in array ) { for (var j in array[ i ]) document.write( array[ i ][ j ] + ""); document.writeln("<BR>");}</SCRIPT > | 1 2 3 1 2 3
 What would the function cube return, assuming it is called with the line cube(3). function cube(y); { return y * y * y; } | JavaScript runtime error
@@ -1186,13 +1067,12 @@ When you are using the absolute path to locate an element, your expression must 
 Whenever you need to select an element and use a predicate on that same element, you will need to use a ______ to access that element's value. | . (period)
 Where is the correct place to insert a JavaScript? | Both the <head> section and the section are correct
 Where on the browser will command window.status("text") display output | on the status bar
-Where on the browser will the command window.status( "text" ) display output? | on the status bar
 Which DOMDocument method is used to create a new attribute? | createAttribute
 Which Exception is used when JAXB operation is applied? | JAXBException
-Which HTTP method gets invoked when a user clicks on a link? Select the one correct answer | GET method
 Which HTTP method is used in FORM based Authentication? | POST
 Which Java technology provides a standard API for publish-subscribe messaging model? | JMS
 Which Java technology provides a unified interface to multiple naming and directory services? | JNDI
+Which Statement about xml is true? | All of the above.
 Which Statement about xml is true? | Elements may nest but not overlap
 Which VBScript function returns an integer indicating the variant subtype? | VarType
 Which XML parser supports XPath capability? | DOM
@@ -1211,7 +1091,6 @@ Which element of the servlet element in the deployment descriptor is used to spe
 Which exception is used to catch Exception when the XMLEventReader is used? | XMLStreamException
 Which facet of the string data type can be used to specify a set of values that a data type can accept? | enumeration
 Which features must the well-formed XML document have? | None of the others
-Which features must the well-formed XML document have? | none
 Which has no syntax error? | alert("hello +3+ times");
 Which interface and method should be used to retrieve a servlet initialization parameter value? (Choose one) | ServletConfig : getInitParameter(String name)
 Which interface can you use to retrieve a resource that belongs to the current web application? | ServletContext
@@ -1233,7 +1112,7 @@ Which is a valid PostConstruct method in a message-driven bean class? | @PostCon
 Which is detected when the mouse moves over a link? | overMouse event
 Which is disadvantage of using JEE (or J2EE) server-side technologies in a web-based application? | Complexity
 Which is not a correct name for an XML documents? | <1dollar>
-Which is not a correct name for an XML element? | <first name>
+Which is not a correct name for an XML documents? | All 3 names are incorrect.
 Which is the BEST case use Container-managed persistent (CMP)? | When you require some kind of special bean, like multi-tables, that cannot be completely realized with a single bean
 Which is the CORRECT statement about JMS? | JMS uses JNDI to find destination
 Which is the CORRECT statement? | Entity beans represent persistent state objects (things that don’t go away when the user goes away)
@@ -1282,7 +1161,6 @@ Which of the following are tags is used to define rules for an element? | <!ELEM
 Which of the following are valid combinations of minOccurs and maxOccurs for any element in a xsd:all group ? | minOccurs = 1 maxOccurs = 1 minOccurs = 0 maxOccurs = 1
 Which of the following are valid iteration mechanisms in jsp? | <% int i = 0;  for(;i<5; i++)  { %>  "Hello World"; <% i++; } %>
 Which of the following are valid iteration mechanisms in jsp? | <% int i = 0;for(;i<5; i++){ %>"Hello World";<% i++;}%>
-Which of the following are valid tags? | <fpt_university>
 Which of the following are well formed XML fragments? | < myElement myAttribute="someValue"/>
 Which of the following axes can be used together to reference all the nodes in any XML document ? | ancestor, descendant, self, following, preceding
 Which of the following best describes the visual effect that alpha is used for? | replacing text colors
@@ -1320,7 +1198,7 @@ Which of the following is a legal function call for the function definition prov
 Which of the following is a valid VBScript conversion function? | CInt
 Which of the following is a valid standard action that can be used by a jsp page to import content generated by another JSP file named another.jsp? | <jsp:include page='another.jsp'/>
 Which of the following is an XMLbased service IDL that defines the service interface and its implementation characteristics. | WSDL
-Which of the following is an illegal array initialization statement? | var n = new Array( 5 ); n = [ 10, 20, 30, 40, 50 ];
+Which of the following is an illegal array initialization statement? | var n = new Array( 5 );
 Which of the following is declared correctly and will not result in an error assuming x = 2 and y = 30? | for ( var j = x; j <= 80 * y; j += 5 / x )
 Which of the following is equivalent <%! ? (Choose one) | <jsp:declaration
 Which of the following is example of JSP directive? Select one correct answer. | include
@@ -1331,16 +1209,10 @@ Which of the following is false? | The Sort property automatically displays the 
 Which of the following is false? | The TDC outputs an interface like Microsoft Excel.
 Which of the following is indicated by URL, which is used on the Internet? | Information resources(sources) on the Internet
 Which of the following is legal JSP syntax to print the value of i. Select the one correct answer | <%int i = 1;%> <%= i %>
-Which of the following is not a JavaScript keyword? | sub
-Which of the following is not a JavaScript selection structure? | for/in
 Which of the following is not a VBScript sub-type? | variant
 Which of the following is not a XML storage option? | Small object storage
-Which of the following is not a border property? | shape
 Which of the following is not a keyword used for default settings in an! ATTLIST element? | #DEFINE
 Which of the following is not a property of the blur filter | d) ( add, direction, strength) All of these are properties of the blur filter.
-Which of the following is not a property of the blur filter? | All of these are properties of the blur filter.
-Which of the following is not a property of the glow filter? | direction
-Which of the following is not a type of DTD? | Table based.
 Which of the following is not a valid HTTP/1.1 method. Select the one correct answer | COMPARE method
 Which of the following is not a valid PARAM setting for TDC controls? | <PARAM NAME =CLASSID: CLSID:333C7BC4-460F-11D0-BC04-0080C7055A83>
 Which of the following is not a valid equality or relational operator? | =
@@ -1353,7 +1225,6 @@ Which of the following is the correct processing instruction that specifies an X
 Which of the following is the proper method to access the length of the array arr[]? | arr.length
 Which of the following is the proper method to apply a transition effect? | element.filters( "blendTrans" ).apply();
 Which of the following is the proper method to apply the fliph filter to the following H1 element? <H1 ID = "test">This is a test</H1> | The filter cannot be applied to this element.
-Which of the following is the proper method to apply the fliph filter to the following H1 element? | The filter cannot be applied to this element
 Which of the following is the proper method to dynamically allocate memory to an array of 100 elements? | var c = new Array( 100 );
 Which of the following is the proper way to dynamically access the background color from within the script? | document.body.style.backgroundColor
 Which of the following is the purpose of a schema? | To describe and constrain both the structure and data within the XML document
@@ -1393,7 +1264,7 @@ Which of the following resources can be signed using an XML signature? | XML enc
 Which of the following schema fragments is the same as the DTD fragment below ? <!ELEMENT myElement EMPTY> | None of the above
 Which of the following selections does not follow the rules of operator precedence? Assume that the operators on the left are evaluated first. | parentheses, subtraction, modulus
 Which of the following selections does not follow the rules of operator precedence? | parentheses, subtraction, modulus
-Which of the following selections is the proper way to apply this CSS rule: .blue { color: blue } | <P CLASS = "blue">
+Which of the following selections is the proper way to apply this CSS rule: | <P CLASS = "blue">
 Which of the following set of statements will you use to process all the child nodes of the root node? | <xsl:template match= “/”> <xsl:apply-templates/> </xsl:template>
 Which of the following settings can be altered to change the darkness of the font? | font-weight
 Which of the following settings for a background image can be modified to create a "watermark" effect where scrolling will not move the image from its set position. | background-attachment
@@ -1463,10 +1334,8 @@ Which of these characters can be included within the text in an XML document in 
 Which of these characters cannot be used as entity references in XML? | $
 Which of these is a correct example of specifying a listener element resented by MyClass class. Assume myServlet element is defined correctly. Select the one correct answer | <listener> <listener-class>MyClass</listener-class></listener>
 Which of these is a correct fragment within the web-app element of deployment descriptor. Select the one correct answer. | <error-page> <exception-type> mypackage.MyException</exception-type> <location> /error.jsp</location> </error-page>
-Which of these is a correct fragment within the web-app element of deployment descriptor. Select the two correct answer | A.<error-page> <error-code>404</error-code> <location>/error.jsp</location> </error-page> <error-page> <exception-type>mypackage.MyException</exception-type> <location>/error.jsp</location> </error-page>
 Which of these is a valid comment in XML? | <!- -This data should be hidden      <FIRSTNAME>Joe</FIRSTNAME>      <LASTNAME>Johnson</LASTNAME>  - ->
 Which of these is a valid comment in XML? | <!- -This data should be hidden<FIRSTNAME>Joe</FIRSTNAME> <LASTNAME>Johnson</LASTNAME>- ->
-Which of these is a valid comment in XML? | <!--This data should be hidden <FIRSTNAME>Joe</FIRSTNAME> <LASTNAME>Johnson</LASTNAME>-->
 Which of these is legal attribute of page directive?. | errorPage
 Which of these is legal return type of the doStartTag method defined in a class that extends TagSupport class? | EVAL_BODY
 Which of these is not a valid top level element in web-app | param-name
@@ -1512,7 +1381,6 @@ Which statement is true about management of an EJB's resources? | The reference 
 Which statement is true about the EJB 3.0 stateful session beans? | Its conversational state is retained across method invocations and transactions
 Which statement is true about the use of a persist operation in a transaction of an Entity Beans | If a user persists a new entity with an existing primary key the transaction will fail
 Which statement is true? | All XML elements must be properly closed
-Which statement is true? | All of the above.
 Which statement is true? | When isThreadSafe attribute of page directive is set to true, a thread is created for each request for the pag
 Which statement is true? | XML tags are case sensitive XML documents must have a root tag XML elements must be properly closed.
 Which statement is used to describe about multi-pipeline? | . XML is mapped to Bean object, then it applied to many JSP
@@ -1535,27 +1403,24 @@ Which three digit error codes represent an error in request from client? Select 
 Which top level XSLT elements is used to define a variable in a stylesheet or template and to assign it a value | xsl:variable
 Which type of JEE (or J2EE) component is used to store business data persistently? | Entity Bean
 Which ways are the CSS style rules applied to HTML? | None of the others
-Which ways are the CSS style rules applied to HTML? | none
 Why does DTD need? | . place preconditions on the data the programs read
 With DTD, each of your XML files can carry a ________ of its own format with it. | description
 With XML Schemas, the senders can ________ the data in a way that the receiver will understand. | describes
 With XPath expressions, _______ are used to select the descendants of an element. | // (double forward slashes)
 With an extensible Schema definition you cannot: | All the above
-With an extensible Schema definition you cannot: | all
 With in a context-param element of deployment descriptor, which of the following element is required? | param-name
 With reference to the snippet of code given below, choose the correct syntax to complete the second line in order to create a XML Document Object var sample sample = | new ActiveXObject("microsoft.XMLDOM")
 With the ________, scripts can respond to a user moving the mouse, scrolling up or down the screen or entering keystrokes. | event model.
 Writing an Internal DTD inside a DOCTYPE is known as: | Wrapping
 XML (definition) | a set of rules for encoding documents in machine-readable form
 XML Can be used to | Create new language.
-XML DOM defines a standard set of objects for XML documents only. | True
 XML DOM defines a standard way for | accessing and manipulating XML documents
 XML DOM is: | XML Document Object Model
 XML DSOs has the property for the number of pages of data the recordset contains | pageCount
 XML Fragment <tomcat-users> <role rolename="admin"/> <role rolename="manager"/> <role rolename="user"/> <role rolename="tomcat"/> <user username="ide" password="ee1KER95" roles="manager,admin"/> <user username="tomcat" password="tomcat" roles="tomcat"/> <user username="khanhkt" password="trongkhanh" roles="manager,admin"/> <user username="guest" password="123456" roles="username"/> </tomcat-users>The Java code fragment using DOM API Document doc = db.parse(new File(path + "WEB-INF/tomcat-users.xml")); XPathFactory xpf = XPathFactory.newInstance(); XPath xpath = xpf.newXPath(); String exp = "//user[contains(@username, 'a')]"; NodeList node = (NodeList) xpath.evaluate(exp, doc, XPathConstants.NODELIST); Choose the correct statement. Assume that all code and file path are correct | The application can get more than one node
 XML Schema became a W3C Recommendation | 02. May 2001
 XML Schema file extension is what | xsd
-XML Schema is designed to | be selfdescriptive.
+XML Schema is designed to | be self-descriptive
 XML Schema | an XML-based alternative to DTD
 XML Schemas are the Successors of | DTD
 XML View Technology is useful in the following situations: | You want to bulk load XML data and decompose them into the underlying tables by using the XML view
@@ -1593,7 +1458,6 @@ XML is used for web services. | True
 XML is | Free and Extensible
 XML offers a standard way to add markup to documents | True
 XML parser can perform operations on input of any data type | False
-XML parser checks for validity and well-formed ness? | True
 XML parser does its work after the processor converts the document into a data | False
 XML parser is a software package, library or module that reads XML document | True
 XML parser is calculated against its speed and performance | True
@@ -1619,7 +1483,6 @@ XPath provides multiple syntax that can be used for queries, addressing and patt
 XSD is: | XML Schema Definition
 XSL ________ how the XML document should be displayed! | describes
 XSL consists of three parts. Which are? | XSLT, Xpath, XSLFO
-XSL describes how the XML document should be displayed, | True
 XSL does not provide support for: | It provides support for all the options stated.
 XSL elements can be used to perform complex calculations | True
 XSL in Internet Explorer 5.0 is 100% compatible with the latest released W3C XSL standard. | False
@@ -1629,8 +1492,7 @@ XSL processors do parses the XML source and tries to find out the matching _____
 XSL provides a transformation language called: | XSLT
 XSL stands for: | EXtensible Stylesheet Language
 XSL uses XSLT to transform an XML ____________ into an XML _______________. | source tree+result tree
-XSLT allows any kind of data to be transformed into a boolean value | True
-XSLT allows any kind of data to be transformed into: | Boolean
+XSLT allows any kind of data to be tranformed into | Boolean
 XSLT and CSS are compatible standards. | True
 XSLT can also be called as XSLT document or transformation script | False
 XSLT can be used to transform XML into HTML, before it is __________ is an XML-related technology that is used to find elements, attributes, and other information in your XML document. | XPath
@@ -1659,7 +1521,6 @@ You can declare the element like this | <xsd:element name="name" type="xsd:strin
 You can do this in an XML schema: | <xsd:attribute name="language" type="xsd:string" use="optional"/>.
 You can escape < and > like this: <message>This is a &lt;message&gt; | element.</message>
 You can implement the ______________and _____________methods to catch the starting and closing tags of elements. | startElement, endElement
-You can implement the ___________method and extract the text node's text from the character array passed to you, using the starting position in the array. The length of the text is also passed to you. | characters
 You can name the schema using the name attribute like | <schema name="schema1">
 You can repeat lines of code within the XSL stylesheet by defining an apply template. | False
 You can require a specific value for an attribute by setting the value for fixed. | True
@@ -1673,7 +1534,6 @@ You can use the Attributes object passed to the _____________ method to handle a
 You can use the getNodeName method to get a node's name and its _______________ method to get its value. | getNodeValue
 You can use the node's _____________ method and check the results it returns against fields such as Node.ELEMENT_NODE,Node.TEXT_NODE, and so on. | getNodeType
 You can use this CSS property/value pair: font-size: 36pt | You can use this CSS property/value pair: display: block
-You can use this CSS property/value pair: text-align: center | You can use this CSS property/value pair: text-decoration: underline.  You can use this CSS property/value pair: margin-top: 10.
 You cannot set valid options when declaring an attribute. | False
 You could use this attribute xmlns:service="http://www.superduperbigco.com/customer_service" in an element | After using this attribute, you can use the service prefix in the current element and any child elements.
 You create a SAX parser by using the ________________object. | SAXParserFactory
@@ -1708,12 +1568,10 @@ ________ allow you to specify the style of your page elements (spacing, margins,
 ________ and ________ run slower when they are applied to large arrays. | linear search, bubble sort
 ________ are declared in each individual HTML element using the keyword STYLE. | Inline styles
 ________ can validate your XML against a DTD. | IE 5
-________ can validate your XML against a DTD. | Internet Explorer 5.0
 ________ fires when the right mouse button is clicked. | ONCONTEXTMENU
-________ is a markup language for describing how content is rendered and _______ is a markup language for describing structured data—content is separated from presentation. | HTML, XML.
+________ is a markup language for describing how content is rendered and ________ is a markup language for describing | HTML, XML.
 ________ is a technology that allows a server-side script to create dynamic content that is sent to the client’s browser. | ASP
 ________ is a very powerful language and the mother of all markup languages. | SGML
-________ is an artificial and informal language that helps programmers develop algorithms. | Pseudocode
 ________ is the well-known host name that refers to your own computer. | localhost
 ________ makes it now possible for data manipulation to be shared by the server and the client. | all of the above
 ________ was originally created by ________. | JavaScript, Netscape
@@ -1724,11 +1582,10 @@ _________________ provides a way to identify a user across more than one page re
 ___________________ includes a static file in a JSP file, parsing the file's JSP elements | include directive
 ______and _______methods do not apply to stateless session beans. | ejbActivate()
 a++; is the same as which of the following ? | a=a+1;
-a_____ function returns number of nodes present in an argument node-set | count
 attributes | it is the advice of w3schools to use tags rather than __________
 attributes | these provide additional information about an element
+c = new Array( 12 ); | declares, allocates
 carrying | HTML is a about displaying information, while XML is about _____________ data (transport and storage)
-case | XML tags are _____________ sensitive
 child element | any element located within the root element
 closing tag | in XML, all elements must have a ____________
 create() method of entity bean home interface returns _____________ | null
@@ -1739,19 +1596,19 @@ display | XML documents do not carry information about how to __________ the dat
 displayed by a browser | XSLT can be used to transform XML into HTML, before it is __________
 document.write(c[8]) | undefined
 document.writeln("Hello World"); | Hello World
-eXtensible Stylesheet Language Transformation | XSLT (acronym)
 errors | With XML, __________ are not allowed
-f the DTD is external to your XML source file, it should be wrapped in a DOCTYPE definition with the following syntax: | <!DOCTYPE root-element SYSTEM "filename">
 fi/catalog/cd[@upc=fi + upc + fi] means | Find the upc attribute that matches the value of the upc variable in the cd element
 firstChild is a | Property containing a reference to the first child of an element
 getAttribute(fiupcfl) retrieves the value of the upc attribute. | True
 he attribute values are not enclosed in | quotation marks.
 he ones we discussed today are that an XML document must contain one or more elements. One element, the root element, must contain all the other elements. | Finally, each element must nest inside any enclosing elements correctly.
+hich of the following XML code snippets is/are correct? | <BOOK><AUTHOR> abc...</AUTHOR></BOOK>
+hich of the following are valid tags? | <FPT_UNIV>
+hich statements are true? | The DTD specifies the grammatical structure of an XML document.
 implemented is called ________. | data abstraction
 independent | XML is a software and hardware __________ tool for carrying information
 invented | XML tags are __________ by the author of the XML document
 is an XML-related technology that is used to find elements, attributes, and other information in your XML document. | XPath
-is the following element declaration valid in XML Schema | no
 letters, numbers, other characters | XML names can contain __________, __________, and __________
 load()  method is used to load a string | False
 loadXML() method is used to load an XML file | False
@@ -1785,7 +1642,6 @@ valid | XML validated against a DTD is __________ XML
 var value = theArray1.join( " " ); | The join method will create a string from the values in theArray1.
 well formed | XML with correct syntax is __________ XML
 what is the purpose of HTML | HTML - designed to display data, with focus on how data looks
-what is the purpose of XML | XML - designed to transport and store data, with focus on what data is
 which of the following SAX2 methods is used by a non validating parser to report that an entity reference is not resolved | skippedEntity()
 will not move the image from its set position. | background-attachment
 would you use to capture the location of the mouse cursor relative to the image boundaries? | offsetX / offsetY
