@@ -90,7 +90,7 @@ Many people think that a national lobby's successful fight against gun control l
 Let X represent the amount of time it takes a student to park in the library parking lot at the university. If we know that the distribution of parking times can be modeled using an exponential distribution with a mean of 4 minutes, find the probability that it will take a randomly selected student between 2 and 12 minutes to park in the library lot. | 0.556744
 A local bank needs information concerning the checking account balances of its customers. A random sample of 15 accounts was checked. The mean balance was $686.75 with a standard deviation of $256.20. Find a 98% confidence interval for the true mean. Assume that the account balances are normally distributed. | ($513.17, $860.33)
 A basketball player has made 70% of his foul shots during the season. If he shoots 3 foul shots in tonight's game, what is the probability that he makes all of the shots? | 0.343
-Let X be a uniform random variable over the interval [0.1, 5] . What is the probability that the random variable X has a value less than 2.1? | 0.6897
+Let X be a uniform random variable over the interval [0.1, 5] . What is the probability that the random variable X has a value less than 2.1? | 0.408
 When considering area under the standard normal curve, decide whether the area to the left ofz =0.2is bigger than, smaller than, or equal to the area to the right ofz = -0.2 | equal to
 A machine is set to pump cleanser into a process at the rate of 10 gallons per minute. Upon inspection, it is learned that the machine actually pumps cleanser at a rate described by the uniform distribution over the interval 9.5 to 11.5 gallons per minute. What is the probability that at the time the machine is checked it is pumping more than 10.5 gallons per minute? | 0.50
 Find the mode(s) for the given dample data 98, 25, 98, 13, 25, 29, 56, 98 | 98
@@ -215,7 +215,7 @@ Assume that the heights of men are normally distributed. A random sample of 16 m
 When considering area under the standard normal curve, decide whether the area between z = 3 andz = -3 is bigger than, smaller than, or equal to the area betweenz =2.7 and z = 2.9. | bigger than
 Find the standard deviation for the binomial distribution which has the stated values of n and p. Round your answer to the nearest hundredth. n = 2661; p = 0.63 | 24.91
 Survey responses of temperatures of the ocean at various depths. which type of data is? | Interval
-Let X be a uniform random variable over the interval [1, 9] . What is the probability that the random variable X has a value less than 6? | 0.400
+Let X be a uniform random variable over the interval [1, 9] . What is the probability that the random variable X has a value less than 6? | 0.625
 Find the variance for the given sample data 53 52 75 62 68 58 49 49 | 89.6
 At a computer manufacturing company, the actual size of computer chips is normally distributed with a mean of 1 centimeter and a standard deviation of 0.1 centimeter. A random sample of 12 computer chips is taken. What is the standard error for the sample mean? | 0.029
 Find z if the normal curve area to the right of z is 0.8997. | -1.2798
